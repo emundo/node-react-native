@@ -3,6 +3,7 @@ FROM node:9.8.0-alpine
 RUN apk update && apk upgrade
 RUN apk add git
 RUN apk add build-base
+RUN apk add python
 
 ## Install React-Native
 RUN npm install -g react-native
