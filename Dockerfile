@@ -19,3 +19,6 @@ WORKDIR /home/emundo
 ## This simplifies the installation of tools like reason-cli.
 RUN npm config set prefix $HOME/npm
 ENV PATH="/home/emundo/npm/bin:${PATH}"
+
+## This can be used to install os-specific packages like reason-cli.
+ENV ARCHITECTURE="linux"
